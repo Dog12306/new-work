@@ -30,7 +30,11 @@ span:first-of-type  匹配到的是第三个子元素span。这里div有两个�
 :first-of-type 匹配的是某父元素下相同类型子元素中的第一个，比如 p:first-of-type，就是指所有类型为p的子元素中的第一个。这里不再限制是第一个子元素了，只要是该类型元素的第一个就行了。
 
 + 同样类型的选择器 :last-child  和 :last-of-type、:nth-child(n)  和  :nth-of-type(n) 也可以这样去理解。
+
+
 ## 02 css3 - 选择器first-child、last-child、nth-child、nth-last-child、nth-of-type
+
+
 ### 01.first-child（IE7兼容）、last-child（IE8不兼容)
 
 
@@ -60,6 +64,8 @@ css:
     }
 	</style>
 解析： 一个页面中无论有几个ul列表，只要设置first-child、last-child，那么所有ul列表项的第一个和最后一个列表项目都会有设置的样式。
+
+
 ###02. nth-child、nth-last-child （IE8不兼容）
 
 
@@ -90,6 +96,8 @@ css:
       background-color: red;
     }
 	</style>
+
+
 ###03. 对奇数、偶数使用样式
 
 
@@ -149,6 +157,8 @@ css:
 
 解析： h2:nth-child(odd)含义是：h2的父元素div 的所有儿子中 为奇数的儿子 设置背景颜色；而不是所有h2中为偶数的h2设置样式； 
 解决方法： nth-of-type可以避免则会中问题产生
+
+
 ###04. nth-of-type（IE8不兼容）：只针对同类型的元素进行计算
 
 
@@ -164,6 +174,8 @@ css:
 	    background-color: #ccc;
 	}
 解析： h2:nth-of-type(odd)含义：在所有h2标签中，只要是奇数h2就设置样式；只针对h2标签，与父元素无关；
+
+
 ###05. 循环使用样式 li:nth-child(4n+1)
 
 
