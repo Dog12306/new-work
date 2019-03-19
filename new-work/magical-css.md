@@ -1,6 +1,6 @@
-#css部分奇特用法总结
+# css部分奇特用法总结
 
-##01 css选择器中:first-child与:first-of-type的区别
+## 01 css选择器中:first-child与:first-of-type的区别
 + :first-child选择器是css2中定义的选择器，从字面意思上来看也很好理解，就是第一个子元素。比如有段代码：
 
 ![](https://images0.cnblogs.com/blog/130623/201402/261609099832424.png)
