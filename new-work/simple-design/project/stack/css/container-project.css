@@ -1,0 +1,220 @@
+.banner{
+	width: 100%;
+	height: 300px;
+	margin-bottom: 50px;
+}
+.banner-c{
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	background-image: url(../img/banner.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.title{
+		width: 1200px;
+		height: 16px;
+		margin: 0 auto;
+		position: relative;
+		color: #888888;
+		font-size: 14px;
+	}
+	.title .title-item{
+		position: absolute;
+		right: 0px;
+		top: 0px;
+	}
+	.title .site-now{
+		display: inline;
+		color: #668aca;
+	}
+	.title .title-list,.title .title-item span{
+		float: left;
+		margin-left: 35px;
+	}
+	.title .title-list a{
+		color: #888888;
+	}
+	.title .title-list a:hover,.title .title-list a.active{
+		color: #668aca;
+	}
+	.title .title-list a:hover b{
+		display: block;
+	}
+	.title .title-list b.active{
+		display: block;
+	}
+	.title .title-list b{
+		display: none;
+		width: 12px;
+		height: 1px;
+		background-color: #668aca;
+		margin: 0 auto;
+	}
+	.house-home{
+		width: 100%;
+		height: 635px;
+		margin-top: 70px;
+	}
+	.house-home-c{
+		width: 1200px;
+		height: 100%;
+		margin: 0 auto;
+	}
+
+		.house-home .menu:after,.house-work .menu:after,.house-food .menu:after,.house-more .menu:after{
+			content: ".";
+			display: block;
+			clear: both;
+			height: 0;
+			visibility: hidden;
+		}
+		.house-home .menu-list a,.house-work .menu-list a,.house-food .menu-list a,.house-more .menu-list a{
+			width: 360px;
+			height: 180px;
+			float: left;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			border-radius: 3px;
+			margin-bottom: 110px;
+		}
+		.house-home .menu-list a li,.house-work .menu-list a li,.house-food .menu-list a li,
+		.house-more .menu-list a li{
+			font-size: 12px;
+			text-align: left;					
+		}
+		.house-home .menu-list a,.house-work .menu-list a,.house-food .menu-list a,.house-more .menu-list a{
+			position: relative;
+		}
+		.house-home .menu-list a ul,.house-work .menu-list a ul,.house-food .menu-list a ul,
+		.house-more .menu-list a ul{
+			position: absolute;
+			left: 0px;
+			top: 180px;
+			color: #9b9b9b;
+		}
+		.house-home .menu-list a .b,.house-work .menu-list a .b,.house-food .menu-list a .b,
+		.house-more .menu-list a .b{		
+			font-size: 14px;
+			margin-top: 28px;			
+		}
+		.house-home .menu-list a span,.house-work .menu-list a span,.house-food .menu-list a span,
+		.house-more .menu-list a span{
+			display: block;
+			width: 30px;
+			height: 30px;
+			background-image: url(../img/arr-right.png);
+			background-size: cover;
+			border-radius: 50%;
+			position: absolute;
+			right: 50px;
+			bottom: -60px;
+		}
+		.house-home .menu-list a li,.house-work .menu-list a li,.house-food .menu-list a li,
+		.house-more .menu-list a li{
+			margin-left: 50px;
+		}
+		.house-home .menu-list a:hover,.house-work .menu-list a:hover,.house-food .menu-list a:hover,
+		.house-more .menu-list a:hover{
+			height: 270px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+		}
+		.house-home .menu-list a:hover .b,.house-work .menu-list a:hover .b,.house-food .menu-list a:hover .b,
+		.house-more .menu-list a:hover .b{
+			margin-top: 55px;
+		}
+		.house-home .menu-list a:hover span,.house-work .menu-list a:hover span,.house-food .menu-list a:hover span,
+		.house-more .menu-list a:hover span{
+			bottom: 60px;
+			background-color: #fff;
+			background-size: 120% 120%;
+			background-position: center;
+		}
+		.house-home .menu-list a:hover ul,.house-work .menu-list a:hover ul,.house-food .menu-list a:hover ul,
+		.house-more .menu-list a:hover ul{
+			top: 0;
+			color: white;
+			background-color: rgba(0,0,0,0.5);
+			width: 360px;
+			height: 270px;
+			border-radius: 5px;
+		}
+		.house-home .menu-list.number1 a{
+			background-image: url(../img/house-home-1.jpg);
+		}
+		.house-home .menu-list.number2 a{
+			background-image: url(../img/house-home-2.jpg);
+			margin: 0 60px; 
+		}
+		.house-home .menu-list.number3 a{
+			background-image: url(../img/house-home-3.jpg);
+		}
+		.house-home .menu-list.number4 a{
+			background-image: url(../img/house-home-4.jpg);
+		}
+		.house-home .menu-list.number5 a{
+			background-image: url(../img/house-home-5.jpg);
+			margin: 0 60px; 
+		}
+		.house-home .menu-list.number6 a{
+			background-image: url(../img/house-home-6.jpg);
+		}
+		.house-work{
+			width: 100%;
+			height: 335px;
+		}
+		.house-work-c{
+			width: 1200px;
+			height: 100%;
+			margin: 0 auto;
+			margin-top: 70px;
+		}
+		.house-work .menu-list.number1 a{
+			background-image: url(../img/house-work-1.jpg);
+		}
+		.house-work .menu-list.number2 a{
+			background-image: url(../img/house-work-2.jpg);
+			margin: 0 60px; 
+		}
+		.house-work .menu-list.number3 a{
+			background-image: url(../img/house-work-3.jpg);
+		}
+		.house-food{
+			width: 100%;
+			height: 335px;
+		}
+		.house-food-c{
+			width: 1200px;
+			height: 100%;
+			margin: 0 auto;
+			margin-top: 70px;
+		}
+		.house-food .menu-list.number1 a{
+			background-image: url(../img/house-food-1.jpg);
+		}
+		.house-food .menu-list.number2 a{
+			background-image: url(../img/house-food-2.jpg);
+			margin: 0 60px; 
+		}
+		.house-food .menu-list.number3 a{
+			background-image: url(../img/house-food-3.jpg);
+		}
+		.house-more-c{
+			width: 1200px;
+			height: 100%;
+			margin: 0 auto;
+			margin-top: 70px;
+		}
+		.house-more .menu-list.number1 a{
+			background-image: url(../img/house-more-1.jpg);
+		}
+		.house-more .menu-list.number2 a{
+			background-image: url(../img/house-more-2.jpg);
+			margin: 0 60px; 
+		}
+		.house-more .menu-list.number3 a{
+			background-image: url(../img/house-more-3.jpg);
+		}

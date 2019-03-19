@@ -1,0 +1,583 @@
+		.banner{
+			width: 100%;
+			height: 700px;
+			background-image: url(../img/banner-1.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.banner-c{
+			width: 1200px;
+			height: 100%;
+			margin: 0 auto;
+			position: relative;
+		}
+		.banner-control{
+			position: absolute;
+			bottom: 19px;
+			left: 548px;			
+		}
+		.banner-control-list{
+			float: left;
+			margin: 0 8px;
+			height: 8px;
+			width: 8px;
+			border-radius: 50%;
+			background-color: white;
+			cursor: pointer;
+			vertical-align: middle;
+		}
+		.banner-control-list:hover,.banner-control-list.active{
+			background-color: #668aca;
+			border: 3px solid #fff;
+			margin: -3px 5px -3px 5px;
+		}
+		.banner-control:after{
+			content: ".";
+			display: block;
+			clear: both;
+			height: 0;
+			visibility: hidden;
+		}
+		.project{
+			width: 100%;
+			height: 551px;
+			background-color: #fff;
+		}
+		.project-c{
+			width: 1200px;
+			height: 100%;
+			background-color: #f6f9ff;
+			margin: 0 auto;
+			position: relative;
+		}
+		.title{
+			padding-top: 115px;
+			margin-bottom: 63px;
+			position: relative;
+		}
+		.title .cname{
+			font-size: 30px;
+			color: #909091;
+		}
+		.title .ename{
+			font-size: 12px;
+			color: #767676;
+		}
+		.title span{
+			display: inline-block;
+			height: 1px;
+			background-color: #767676;
+		}
+		.title .name-left{
+			width: 60px;
+			position: absolute;
+			bottom: -5px;
+		}
+		.title .name-right{
+			width: 300px;
+			position: absolute;
+			bottom: -5px;
+			right: 0;
+		}
+		.project .menu{
+			text-align: center;	
+
+		}		
+		.project .menu .menu-list{
+			display: inline-block;
+			cursor: pointer;
+			position: relative;
+			font-size: 16px;
+			color: #767676;	
+		}
+		.project .menu:after{
+			content: ".";
+			display: block;
+			height: 0;
+			clear: both;
+			visibility: hidden;
+		}
+		.project .menu .menu-list:hover .menu-list-blue,.project .menu .menu-list.active .menu-list-blue{
+			display: block;
+		}
+		.project .menu .menu-list .menu-list-blue{
+			display: none;			
+			position: absolute;
+			height: 1px;
+			width: 20px;
+			background-color: #668aca;
+			bottom: -1px;
+			left: 6px;
+		}
+		
+		.project .menu .menu-list .menu-list-blue.MORE{
+			left: 15px;
+		}
+		.project .menu .menu-span{
+			margin: 0 30px;
+			font-size: 12px;
+			color: #767676;
+		}
+		.project .menu .menu-list:hover,.project .menu .menu-list.active{
+			color: #668aca;
+		}
+		.project .menu .submenu{
+			position: absolute;
+			left: -418px;
+			top: 55px;
+			width: 1200px;
+			cursor: default;
+		}
+		.project .menu .submenu:after{
+			content: ".";
+			display: block;
+			clear: both;
+			height: 0;
+			visibility: hidden;
+		}
+		.project .menu .submenu-list a{
+			width: 360px;
+			height: 180px;
+			float: left;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			border-radius: 3px;
+		}
+		.project .menu .submenu-list.number1 a{
+			background-image: url(../img/project-1.jpg);
+		}
+		.project .menu .submenu-list.number2 a{
+			background-image: url(../img/project-2.jpg);
+			margin: 0 60px;
+		}
+		.project .menu .submenu-list.number3 a{
+			background-image: url(../img/project-3.jpg);
+		}
+		.project .menu .submenu-list a li{
+			font-size: 12px;
+			text-align: left;					
+		}
+		.project .menu .submenu-list a{
+			position: relative;
+		}
+		.project .menu .submenu-list a ul{
+			position: absolute;
+			left: 0px;
+			top: 180px;
+			color: #9b9b9b;
+		}
+		.project .menu .submenu-list a .b{		
+			font-size: 14px;
+			margin-top: 28px;			
+		}
+		.project .menu .submenu-list a span{
+			display: block;
+			width: 30px;
+			height: 30px;
+			background-image: url(../img/arr-right.png);
+			background-size: cover;
+			border-radius: 50%;
+			position: absolute;
+			right: 50px;
+			bottom: -60px;
+		}
+		.project .menu .submenu-list a li{
+			margin-left: 50px;
+		}
+		.project .menu .submenu-list a:hover{
+			height: 270px;
+			border-radius: 5px;
+		}
+		.project .menu .submenu-list a:hover .b{
+			margin-top: 55px;
+		}
+		.project .menu .submenu-list a:hover span{
+			bottom: 60px;
+			background-color: #fff;
+			background-size: 120% 120%;
+			background-position: center;
+		}
+		.project .menu .submenu-list a:hover ul{
+			top: 0;
+			color: white;
+			background-color: rgba(0,0,0,0.5);
+			width: 360px;
+			height: 270px;
+			border-radius: 5px;
+		}
+		.product{
+			width: 100%;
+
+		}
+		.product-c{
+			width: 1200px;
+			height: 100%;
+			margin: 0 auto;
+			position: relative;
+		}
+		.furniture{
+			height: 950px;
+		}
+		.furniture:after{
+			content: ".";
+			display: block;
+			clear: both;
+			height: 0;
+			visibility: hidden;
+		}
+		.furniture-list{
+			margin-left: 56.5px;			
+			font-size: 16px;
+			float: left;
+			width: 164px;
+			height: 86px;
+			text-align: center;			
+			background-repeat: no-repeat;
+			background-position: center;
+			white-space: nowrap;
+			vertical-align: middle;
+			color: #767676;
+			cursor: pointer;
+		}
+		.furniture-list .furniture-text{
+			display: inline-block;
+			margin-top: 93px; 
+		}
+		.furniture-list:hover{
+			background-color: #94adda;
+			color: #94adda;
+		}
+		.furniture-list:hover b{
+			display: block;
+		}
+		.furniture-list.active{
+			background-color: #94adda;
+			color: #94adda;
+		}
+		.furniture-list.active b{
+			display: block;
+		}
+		.furniture-list span b{
+			display: none;
+			width: 16px;
+			height: 1px;
+			background-color: #94adda;
+			margin: 3px auto;
+		}
+		.furniture-list.number1{
+			background-image: url(../img/bed1.png);			
+			margin-left: 77px;	
+		}
+		.furniture-list.number2{
+			background-image: url(../img/sofa.png);			
+		}
+		.furniture-list.number3{
+			background-image: url(../img/table.png);			
+		}
+		.furniture-list.number3 span{
+			margin-left: -5px;
+		}
+		.furniture-list.number4{
+			background-image: url(../img/closet.png);			
+		}
+		.furniture-list.number5{
+			background-image: url(../img/light.png);			
+		}
+		.furniture-list .bed{
+			position: absolute;
+			width: 1200px;
+			left: 0;
+			padding-top: 82px;
+			overflow: hidden;
+			top: 345px;
+		}
+		.furniture-list .bed:after{
+			content: ".";
+			display: block;
+			clear: both;
+			height: 0;
+			visibility: hidden;
+		}
+		.furniture-list .bed .bed-list{
+			display: inline-block;
+			width: 33%;
+			height: 360px;
+			float: left;
+			background-size: 80% 80%;
+			background-repeat: no-repeat;
+			background-position: center;
+			margin-top: 
+		}
+		.furniture-list .bed .bed-list a{
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		.furniture-list .bed .bed-list.number1{
+			background-image: url(../img/bed-1.jpg)
+		}
+		.furniture-list .bed .bed-list.number2{
+			background-image: url(../img/bed-2.jpg)
+		}
+		.furniture-list .bed .bed-list.number3{
+			background-image: url(../img/bed-3.jpg)
+		}
+		.furniture-list .bed .bed-list.number4{
+			background-image: url(../img/bed-4.jpg)
+		}
+		.furniture-list .bed .bed-list.number5{
+			background-image: url(../img/bed-5.jpg)
+		}
+		.furniture-list .bed .bed-list.number6{
+			background-image: url(../img/bed-6.jpg)
+		}
+		.furniture-list .bed .bed-list{
+			text-align: left;
+			position: relative;
+		}
+		.furniture-list .bed .bed-list .bed-text .line{
+			display: inline-block;
+			width: 80px;
+			height: 1px;
+			background-color: #fff;
+		}
+		.furniture-list .bed .bed-list .bed-text .number{
+			font-size: 30px;
+		}
+		.furniture-list .bed .bed-list .bed-text span{
+			color: #fff;
+		}
+		.furniture-list .bed .bed-list .bed-text .font{
+			margin-left: 70px;
+			margin-top: 5px;
+		}
+		.furniture-list .bed .bed-list .bed-text .font-16{
+			font-size: 16px;
+			color: #888888;
+		}
+		.furniture-list .bed .bed-list .bed-text .font-14{
+			font-size: 14px;
+			color: #888888;
+		}
+		.furniture-list .bed .bed-list .bed-text{
+			position: absolute;
+			bottom: 0;
+		}
+		.furniture-list .bed .bed-list a:hover .bed-text{
+			height: 89%;
+			width: 100%;
+			top: 0;
+			background-color: rgba(127, 127, 127, 0.5);
+			border-radius: 10px;
+		}
+		.furniture-list .bed .bed-list a:hover .font{
+			color: #fff;
+		}
+		.furniture-list .bed .bed-list a:hover span{
+			margin-top: 130px;
+		}
+		.service-area{
+			height: 700px;
+			width: 100%;
+			background-image: url(../img/service.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+		.service-area-c{
+			width: 1200px;
+			height: 100%;
+			position: relative;
+			margin: 0 auto;
+		}
+		.service-text{
+			position: absolute;
+			top: 146px;
+			left: 0;
+			font-size: 30px;
+			color: #fff;
+		}
+		.service-text .service-text-list p{
+			margin-top: 36px;
+			font-size: 14px;
+		}
+		.service-title{
+			width: 1200px;
+			position: relative;
+			margin: 0 auto;
+		}
+		.service-item{
+			position: absolute;
+			bottom: 149px;
+			right: 0;
+			border: 1px solid #6e6264;
+			border-right: none;	
+		}
+		.service-item:after{
+			content: ".";
+			display: block;
+			clear: both;
+			height: 0;
+			visibility: hidden;
+		}
+		.service-list{	
+			position: relative;		
+			float: left;
+			width: 248px;
+			height: 148px;
+			text-align: center;
+			border-right: 1px solid #6e6264;			
+		}
+		.service-list:hover{
+			background-color: #668aca;
+		}
+		.service-list .box{
+			margin: auto;
+		}
+		.service-list a{
+			position: absolute;
+			display: flex;
+			width: 100%;
+			height: 100%;
+			color: #fff;
+
+		}
+		.service-list:hover a{
+			width: 264px;
+			height: 158px;
+			top: -5px;
+			left: -8px;
+			z-index: 100;
+			background-color: #668aca;
+		}
+		.service-list .cname{
+			font-size: 16px;
+		}
+		.service-list .ename{
+			font-size: 12px;
+		}
+		.service-list span{
+			display: block;
+		}
+		.service-list .line{
+			width: 30px;
+			height: 1px;
+			background-color: #fff;
+			margin: 7px auto;
+		}
+		.news{
+			width: 100%;
+			height: 802px;
+		}
+		.news-c{
+			width: 1200px;
+			height: 100%;
+			position: relative;
+			margin: 0 auto;
+		}
+		.news-c .news-picture-left .picture-1{
+			width: 570px;
+			height: 270px;
+			position: absolute;
+			bottom: 300px;
+			left: 0;
+			background-image: url(../img/service-1.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+		.news-c a{
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		.news-c .news-picture-left .picture-1 .news-text{
+			position: absolute;
+			bottom: 0;			
+			height: 90px;
+			width: 570px;
+			background-color: rgba(0, 0, 0, 0.5);
+			color: #fff;
+			line-height: 20px;
+		}
+		.news-c .news-picture-left .picture-1 .news-text .text{
+			margin-left: 50px;
+		}
+		.news-c .news-picture-left .picture-1 .news-text .arr{
+			display: block;
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			background-color: #fff;
+			bottom: 12px;
+			right: 50px;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 30px;
+			color: #a1a1a1;
+			font-size: 20px;
+		}
+		.news-c .news-picture-left .picture-1 .news-text .text.big{
+			font-size: 16px;
+			margin-bottom: 10px;
+			margin-top: 8px;
+		}
+		.news-c .news-picture-left .picture-1 .news-text .text{
+			font-size: 12px;
+		}
+		.news-c .news-picture-left .picture-2{
+			width: 270px;
+			height: 270px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background-image: url(../img/service-2.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+		.news-c .news-picture-left .picture-3{
+			width: 270px;
+			height: 270px;
+			position: absolute;
+			bottom: 0;
+			left: 300px;
+			background-image: url(../img/service-3.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+		.news-c .news-picture .picture-right{
+			width: 570px;
+			height: 570px;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			background-image: url(../img/service-4.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+		.about-us{
+			width: 100%;
+			height: 760px;
+		}
+		.about-us-c{
+			width: 1200px;
+			height: 100%;
+			margin: 0 auto;
+			position: relative;
+		}
+		.about-us-c .about-picture{
+			width: 500px;
+			height: 300px;
+			background-image: url(../img/about.jpg);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+		.about-us-c .text{
+			position: absolute;
+			width: 671px;
+			right: 0;
+			bottom: 272px;
+			font-size: 14px;
+			color: #767676;
+			line-height: 23px;
+		}
+		

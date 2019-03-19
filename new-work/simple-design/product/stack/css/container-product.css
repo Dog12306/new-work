@@ -1,0 +1,232 @@
+	.banner{
+		width: 100%;
+		height: 300px;
+		margin-bottom: 50px;
+	}
+	.banner-c{
+		width: 1200px;
+		height: 100%;
+		margin: 0 auto;
+		background-image: url(../img/banner.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.title{
+		width: 1200px;
+		height: 16px;
+		margin: 0 auto;
+		position: relative;
+		color: #888888;
+		font-size: 14px;
+	}
+	.title .title-item{
+		position: absolute;
+		right: 0px;
+		top: 0px;
+	}
+	.title .site-now{
+		display: inline;
+		color: #668aca;
+	}
+	.title .title-list,.title .title-item span{
+		float: left;
+		margin-left: 35px;
+	}
+	.title .title-list a{
+		color: #888888;
+	}
+	.title .title-list a:hover,.title .title-list a.active{
+		color: #668aca;
+	}
+	.title .title-list a:hover b{
+		display: block;
+	}
+	.title .title-list b.active{
+		display: block;
+	}
+	.title .title-list b{
+		display: none;
+		width: 12px;
+		height: 1px;
+		background-color: #668aca;
+		margin: 0 auto;
+	}
+	.bed-product{
+		width: 100%;
+		height: 960px;
+	}
+	.bed-product-c{
+		width: 1200px;
+		height: 100%;
+		margin: 0 auto;
+	}
+	.bed:after,.sofa:after,.table:after,.closet:after,.light:after{
+			content: ".";
+			display: block;
+			clear: both;
+			height: 0;
+			visibility: hidden;
+		}
+		.bed .bed-list,.sofa .sofa-list,.table .table-list,.closet .closet-list,.light .light-list{
+			display: inline-block;
+			width: 33%;
+			height: 360px;
+			float: left;
+			background-size: 80% 80%;
+			background-repeat: no-repeat;
+			background-position: center;
+			margin-top: 30px;
+
+		}
+		.bed .bed-list a,.sofa .sofa-list a,.table .table-list a,.closet .closet-list a,.light .light-list a{
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		.bed .bed-list,.sofa .sofa-list,.table .table-list,.closet .closet-list,.light .light-list{
+			text-align: left;
+			position: relative;
+		}
+		.bed .bed-list .bed-text .line,.sofa .sofa-list .sofa-text .line,.table .table-list .table-text .line,
+		.closet .closet-list .closet-text .line,.light .light-list .light-text .line{
+			display: inline-block;
+			width: 80px;
+			height: 1px;
+			background-color: #fff;
+		}
+		.bed .bed-list .bed-text .number,.sofa .sofa-list .sofa-text .number,.table .table-list .table-text .number,
+		.closet .closet-list .closet-text .number,.light .light-list .light-text .number{
+			font-size: 30px;
+		}
+		.bed .bed-list .bed-text span,.sofa .sofa-list .sofa-text span,.table .table-list .table-text span,
+		.closet .closet-list .closet-text span,.light .light-list .light-text span{
+			color: #fff;
+		}
+		.bed .bed-list .bed-text .font,.sofa .sofa-list .sofa-text .font,.table .table-list .table-text .font,
+		.closet .closet-list .closet-text .font,.light .light-list .light-text .font{
+			margin-left: 70px;
+			margin-top: 5px;
+		}
+		.bed .bed-list .bed-text .font-16,.sofa .sofa-list .sofa-text .font-16,.table .table-list .table-text .font-16,
+		.closet .closet-list .closet-text .font-16,.light .light-list .light-text .font-16{
+			font-size: 16px;
+			color: #888888;
+		}
+		.bed .bed-list .bed-text .font-14,.sofa .sofa-list .sofa-text .font-14,.table .table-list .table-text .font-14,
+		.closet .closet-list .closet-text .font-14,.light .light-list .light-text .font-14{
+			font-size: 14px;
+			color: #888888;
+		}
+		.bed .bed-list .bed-text,.sofa .sofa-list .sofa-text,.table .table-list .table-text,.closet .closet-list .closet-text,
+		.light .light-list .light-text{
+			position: absolute;
+			bottom: 0;
+		}
+		.bed .bed-list a:hover .bed-text,.sofa .sofa-list a:hover .sofa-text,.table .table-list a:hover .table-text,
+		.closet .closet-list a:hover .closet-text,.light .light-list a:hover .light-text{
+			height: 89%;
+			width: 100%;
+			top: 0;
+			background-color: rgba(127, 127, 127, 0.5);
+			border-radius: 10px;
+		}
+		.bed .bed-list a:hover .font,.sofa .sofa-list a:hover .font,.table .table-list a:hover .font,
+		.closet .closet-list a:hover .font,.light .light-list a:hover .font{
+			color: #fff;
+		}
+		.bed .bed-list a:hover span,.sofa .sofa-list a:hover span,.table .table-list a:hover span,
+		.closet .closet-list a:hover span,.light .light-list a:hover span{
+			margin-top: 130px;
+		}
+		.bed .bed-list.number1{
+			background-image: url(../../../stack/img/bed-1.jpg)
+		}
+		.bed .bed-list.number2{
+			background-image: url(../../../stack/img/bed-2.jpg)
+		}
+		.bed .bed-list.number3{
+			background-image: url(../../../stack/img/bed-3.jpg)
+		}
+		.bed .bed-list.number4{
+			background-image: url(../../../stack/img/bed-4.jpg)
+		}
+		.bed .bed-list.number5{
+			background-image: url(../../../stack/img/bed-5.jpg)
+		}
+		.bed .bed-list.number6{
+			background-image: url(../../../stack/img/bed-6.jpg)
+		}
+		.sofa-product{
+			width: 100%;
+			height: 482px;
+		}
+		.sofa-product-c{
+			width: 1200px;
+			height: 100%;
+			margin: 0 auto;
+		}
+		.sofa .sofa-list.number1{
+			background-image: url(../img/sofa-1.jpg)
+		}
+		.sofa .sofa-list.number2{
+			background-image: url(../img/sofa-2.jpg)
+		}
+		.sofa .sofa-list.number3{
+			background-image: url(../img/sofa-3.jpg)
+		}
+		.table-product{
+			width: 100%;
+			height: 596px;			
+		}
+		.table-product-c{
+			width: 1200px;
+			height: 100%;
+			margin: 0 auto;
+		}
+		.table .table-list.number1{
+			background-image: url(../img/table-1.jpg);
+		}
+		.table .table-list.number2{
+			background-image: url(../img/table-2.jpg);
+		}
+		.table .table-list.number3{
+			background-image: url(../img/table-3.jpg);
+		}
+		.closet-product{
+			width: 100%;
+			height: 596px;
+		}
+		.closet-product-c{
+			width: 1200px;
+			height: 100%;
+			margin: 0 auto;
+		}
+		.closet .closet-list.number1{
+			background-image: url(../img/closet-1.jpg);
+		}
+		.closet .closet-list.number2{
+			background-image: url(../img/closet-2.jpg);
+		}
+		.closet .closet-list.number3{
+			background-image: url(../img/closet-3.jpg);
+		}
+		.light-product{
+			width: 100%;
+			height: 675px;
+		}
+		.light-product-c{
+			width: 1200px;
+			height: 100%;
+			margin: 0 auto;
+		}
+		.light .light-list.number1{
+			background-image: url(../img/light-1.jpg);
+		}
+		.light .light-list.number2{
+			background-image: url(../img/light-2.jpg);
+		}
+		.light .light-list.number3{
+			background-image: url(../img/light-3.png);
+		}
+		

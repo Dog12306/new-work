@@ -1,0 +1,66 @@
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		a{
+			text-decoration: none;
+		}
+		li{
+			list-style: none;
+		}
+		.header{
+			height: 100px;
+			width: 100%;
+			background-color: #fff;
+		}
+		.header-c{
+			height: 100%;
+			width: 1200px;
+			margin: 0 auto;
+			position: relative;
+		}
+		.header-c-logo{
+			padding-top: 24px;
+			display: inline-block;
+		}
+		.header-c .nav{
+			position: absolute;
+			top: 34px;
+			right: 0px;
+		}
+		.header-c .nav .nav-list{
+			float: left;
+			margin-left: 75px;
+
+		}
+		.header-c .nav .nav-list:hover{
+			margin-left: 67px;
+		}
+		.header-c .nav .nav-list.active:hover{
+			margin-left: 75px;
+		}
+		.header-c .nav .nav-list a{
+			display: block;
+			font-size: 14px;
+			letter-spacing: 2px;
+			height: 32px;
+			line-height: 32px;
+			position: relative;
+			color: #9b9b9b;
+		}
+		.header-c .nav .nav-list a:hover,.header-c .nav .nav-list a.active{
+			color: #668aca;
+			font-size: 18px;
+		}
+		.header-c .nav .nav-list a:hover .xb,.header-c .nav .nav-list a .active
+		{
+			display: block;
+		}
+		.header-c .nav .nav-list a span{
+			display: none;
+			width: 16px;
+			height: 1px;
+			background-color: #94adda;
+			margin: 0px auto;
+		}
+		
