@@ -66,7 +66,7 @@ css:
 解析： 一个页面中无论有几个ul列表，只要设置first-child、last-child，那么所有ul列表项的第一个和最后一个列表项目都会有设置的样式。
 
 
-###02. nth-child、nth-last-child （IE8不兼容）
+### 02. nth-child、nth-last-child （IE8不兼容）
 
 
 ![](https://img-blog.csdn.net/20170427100715702?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXJkb3V6aGFuZw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
@@ -98,7 +98,7 @@ css:
 	</style>
 
 
-###03. 对奇数、偶数使用样式
+### 03. 对奇数、偶数使用样式
 
 
 ![](https://img-blog.csdn.net/20170427101619762?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXJkb3V6aGFuZw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
@@ -159,7 +159,7 @@ css:
 解决方法： nth-of-type可以避免则会中问题产生
 
 
-###04. nth-of-type（IE8不兼容）：只针对同类型的元素进行计算
+### 04. nth-of-type（IE8不兼容）：只针对同类型的元素进行计算
 
 
 ![](https://img-blog.csdn.net/20170427104028421?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXJkb3V6aGFuZw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
@@ -176,7 +176,7 @@ css:
 解析： h2:nth-of-type(odd)含义：在所有h2标签中，只要是奇数h2就设置样式；只针对h2标签，与父元素无关；
 
 
-###05. 循环使用样式 li:nth-child(4n+1)
+### 05. 循环使用样式 li:nth-child(4n+1)
 
 
 ![](https://img-blog.csdn.net/20170427105049966?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXJkb3V6aGFuZw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
