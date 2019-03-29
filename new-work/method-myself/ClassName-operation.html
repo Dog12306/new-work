@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>元素类名操作</title>
+</head>
+<body>
+	<script>
+		/*
+		 * author 高家乐
+		 * 功能: 给元素添加类名
+		 * @param Ele 元素名
+		 * @param value 一个或多个要添加的类名(字符串形式)
+		 * return 添加后的class名
+		 */
+		function addClass(Ele,value){
+			var ClassArr = Ele.className.split(" ");
+			for(var i = 1; i < arguments.length; i ++){
+				if(ClassArr.indexOf(arguments[i]) === -1){
+					ClassArr.push([arguments[i]])
+				}
+			}
+			var ClassStr = ClassArr.join(" ");
+			Ele.className = ClassStr
+			return ClassStr;
+		}
+
+
+
+		/*
+		 * author 高家乐
+		 * 功能: 给元素添加类名
+		 * @param Ele 元素名
+		 * @param value 一个或多个要删除的类名(字符串形式)
+		 * return 删除后的class名
+		 */
+		function removeClass(Ele,value){
+			var ClassArr = Ele.className.split(" ");
+			for(var i = 1; i < arguments.length; i ++){
+				if(ClassArr.indexOf(arguments[i]) !== -1){
+					ClassArr.splice(ClassArr.indexOf(arguments[i]),1);
+					i --;
+				}
+			}
+			var ClassStr = ClassArr.join(" ");
+			Ele.className = ClassStr;
+			return ClassStr
+		}
+	</script>
+</body>
+</html>

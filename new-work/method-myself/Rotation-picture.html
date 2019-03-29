@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动态轮播</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul,li{
+			list-style: none;
+		}
+		/*ul:after{
+			content: ".";
+			display: block;
+			clear: both;
+			height: 0;
+			visibility: hidden;
+		}*/
+		ul{
+			display: inline-block;
+		}
+		body{
+			text-align: center;
+			background-color: rgba(0,0,0,0.5);
+		}
+		.list{
+			width: 100px;
+			height: 100px;
+			float: left;
+			position: relative;
+			cursor: pointer;
+		}
+		.list:hover img{
+			position: absolute;
+			width: 120px;
+			height: 120px;
+			left: -10px;
+			top: 0;
+			z-index: 100;
+		}
+		.list img{
+			width: 100%;
+			height: 100%;
+		}
+		.box{
+			position: relative;
+			width: 1200px;
+			height: 600px;
+			margin: 0 auto;
+		}
+		.box img{
+			height: 100%;
+			width: 100%;
+		}
+		.left{
+			left: 0;
+		}
+		.left,.right{
+			position: absolute;
+			width: 50px;
+			height: 100px;
+			top: 40%;
+			right: 0;
+			background-color: rgba(0,0,0,0.5);
+			cursor: pointer;
+			line-height: 100px;
+			font-size: 50px;
+			color: #fff;
+		}
+		.left:hover,.right:hover{
+			background-color: rgba(255,255,255,0.5);
+			color: #000;
+		}
+		.box ul{
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		.hold{
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background-color: rgba(0,0,0,0.5);
+			float: left;
+			margin-left: 20px;
+			cursor: pointer;
+		}
+		.hold:hover{
+			background-color: rgba(255,255,255,0.5);
+			border: 2px solid rgba(0,0,0,0.5);
+			margin-right: -4px;
+			margin-bottom: -4px;
+		}
+		.act img{
+			position: absolute;
+			width: 120px;
+			height: 120px;
+			left: -10px;
+			top: 0;	
+			z-index: 10;		
+		}
+		.acthold{
+			background-color: rgba(255,255,255,0.5);
+			border: 2px solid rgba(0,0,0,0.5);
+			margin-right: -4px;
+			margin-bottom: -4px;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		
+		/*
+		 * author 高家乐.
+		 * 实现轮播图片效果
+		 * 通过字符串拼接,动态添加图片数量,自动居中.
+		 * 多个控件绑定,实现同步.
+		 */
+
+		var body = document.getElementsByTagName("body")[0];
+		body.innerHTML = '<ul></ul><div class = "box"></div>';
+		var ul = body.children[0];
+		str = "";
+		strhold = "<ul>";
+		for(var i = 0; i < 6; i ++){
+			str += '<li class = "list' + (i === 0?" act":"") + '"' + ' onclick = "fn(' + i + ')"><img src = ./img/img' + (i + 1) + '.jpg></li>'
+			strhold += '<li class = "hold' + (i === 0?" acthold":"") + '"' + ' onclick = "fn(' + i + ')"></li>'
+		}
+		console.log(i);
+		ul.innerHTML = str;
+		body.children[1].innerHTML = '<img src = ""><div class = "left"><</div><div class = "right">></div>';
+		body.children[1].innerHTML += strhold + "</ul>";
+		body.children[1].children[0].src = ul.children[0].children[0].src;
+		function fn(index){						
+			body.children[1].children[0].src = ul.children[index].children[0].src;
+			n = index;
+			var act = document.getElementsByClassName("act")[0];
+			act.className = "list";
+			ul.children[index].setAttribute("class","list act");
+			var acthold = document.getElementsByClassName("acthold")[0];
+			acthold.className = "hold";
+			body.children[1].children[3].children[index].setAttribute("class","hold acthold");			
+		}
+		var act = document.getElementsByClassName("act")[0];
+		var acthold = document.getElementsByClassName("acthold")[0];
+		var n = 0;
+		body.children[1].children[1].onclick = function(){
+			n --;
+			if(n === -1){
+				n = (i - 1);
+			}
+			// body.children[1].children[0].src = ul.children[n].children[0].src;
+			fn(n)
+		}
+		body.children[1].children[2].onclick = function(){
+			n ++;
+			if(n === i){
+				n = 0;
+			}
+			// body.children[1].children[0].src = ul.children[n].children[0].src;
+			fn(n)
+		}
+	</script>
+</body>
+</html>

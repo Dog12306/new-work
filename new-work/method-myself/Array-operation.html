@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数组操作</title>
+</head>
+<body>
+	<script>
+		var arr = [1,2,3,4,"hello world"]
+
+		/*
+		 * author 高家乐.
+		 * 模拟数组的push功能,一次可传入多个数据.
+		 * @param Array 数组名.
+		 * @param datas 一个或多个要添加的数据.
+		 * return 返回添加后的数组长度.
+		 * 会改变原数组
+		 */
+		function MyPush(Array,datas){
+			for(var i = 1; i < arguments.length; i ++){
+				Array[Array.length] = arguments[i];				
+			}
+			return Array.length;
+		}
+
+		
+
+
+		/*
+		 * author 高家乐.
+		 * 模拟数组的pop功能,一次可去掉多个数据.
+		 * @param Array 数组名.
+		 * @param n 一个或多个要从尾部去掉的数据.
+		 * return 返回删除的数组.
+		 * 会改变原数组.
+		 */
+		function MyPop(Array,n){
+			var arr = Array.slice(Array.length-n,);
+			Array.length = Array.length - n
+			return arr;
+		}
+
+
+		/*
+		 * author 高家乐.
+		 * 模拟数组的shift功能,一次可去掉多个数据.
+		 * @param Array 数组名.
+		 * @param n 一个或多个要从头部去掉的数据.
+		 * return 返回删除的数组.
+		 * 会改变原数组.
+		 */
+		function MyShift(Array,n){
+			var arr = Array.splice(0,n)
+			return arr
+		}
+
+
+		/*
+		 * author 高家乐.
+		 * 模拟数组的unshift功能,一次可添加多个数据.
+		 * @param Array 数组名.
+		 * @param n 一个或多个要从头部添加的数据.
+		 * return 返回添加后的数组.
+		 * 不会改变原数组.!!!!!!!!
+		 */
+		// function MyUnShift(Array,datas){
+		// 	var arr = [];
+		// 	console.log(arr);
+		// 	for(var i = 0; i < (Array.length + arguments.length - 1); i ++){
+		// 		arr[i] = arguments[i + 1];
+		// 		if (i > (arguments.length - 2)){
+		// 			arr[i] = Array[i - arguments.length + 1]
+		// 		}
+		// 	}
+		// 	return arr
+		// }
+
+
+		/*
+		 * author 高家乐.
+		 * 模拟数组的unshift功能,一次可添加多个数据.
+		 * @param Array 数组名.
+		 * @param n 一个或多个要从头部添加的数据.
+		 * return 返回添加数组后的长度.
+		 * 会改变原数组.
+		 */
+		function MyUnShift(Array,datas){
+			for(var i = 0; i < arguments.length - 1; i ++){
+				Array.splice(i,0,arguments[i + 1]);
+			}
+			return Array.length
+		}
+		console.log(arr)
+		console.log(MyUnShift(arr,1,2,3,4,5,5,5,5))
+		console.log(arr)
+	</script>
+</body>
+</html>
