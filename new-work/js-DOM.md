@@ -2,7 +2,7 @@
 
 ## DOM的数据结构(树状)
 
-![](./img/js-DOM.png)
+![](img/js-DOM.png)
 
 > + HTML的组成部分为节点(Node)
 > 
@@ -232,6 +232,6 @@
 
 > + 事件表
 
-![](./img/event.png)
+![](img/event.png)
 
-![](./img/event2.png)
+![](img/event2.png)
